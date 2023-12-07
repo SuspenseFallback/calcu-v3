@@ -5,10 +5,12 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar.jsx";
 
-const router = createBrowserRouter({
-  path: "/",
-  element: <Navbar />,
-});
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navbar />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
